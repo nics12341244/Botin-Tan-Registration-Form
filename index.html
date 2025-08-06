@@ -239,6 +239,22 @@
         
         <hr>
 
+        <div class="upload-row">
+  <label class="upload-label">Upload a profile picture:</label>
+  <br>
+  <div class="upload-section">
+    <label for="profilePic" class="custom-upload-button" style="background-color: white; color: black";>Choose File</label>
+    <span id="fileStatus" class="file-status">No file chosen</span>
+    <input
+      type="file"
+      id="profilePic"
+      
+      onchange="document.getElementById('fileStatus').textContent = this.files[0]?.name || 'No file chosen';"
+    />
+  </div>
+</div>
+
+
 
 
 
